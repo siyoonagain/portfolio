@@ -1,0 +1,55 @@
+/* 애니메이션 등록 */
+@keyframes move1{
+    0%{
+      transform:translateX(100%);
+      opacity:0;
+    }
+    100%{
+      transform:translateX(0);
+      opacity:1;
+    }
+}
+@keyframes moveUp{
+    0%{
+      transform:translateY(100%);
+      opacity:0;
+    }
+    100%{
+      transform:translateY(0);
+      opacity:1;
+    }
+}
+@keyframes moveAllow{
+  0%{
+    transform: translateY(0%);
+    opacity:0;
+  }
+  100%{
+    transform: translateY(150%);
+    opacity:1;
+  }
+}
+@keyframes moveAround{
+  0%{
+    transform:rotate(0);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+@keyframes bigger{
+  0%{
+    transform:scale(1);
+  }
+  100%{
+    transform:scale(2);
+  }
+}
