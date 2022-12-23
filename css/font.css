@@ -16,4 +16,10 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'establishnaneunyahaeginsaOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishnaneunyahaeginsaOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* font-family: 'Permanent Marker', cursive; */

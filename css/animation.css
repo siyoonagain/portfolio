@@ -154,3 +154,11 @@
         transform:translateX(-1%);
     }
 }
+@keyframes introFadeout {
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-200%);
+    }
+  }

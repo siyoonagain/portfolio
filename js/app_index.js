@@ -1,43 +1,63 @@
 $(document).ready(function(){
-  // 메뉴바
-  let status = false;
- $(".fa-bars").click(function(){
-   if(status==false){
+  // 앱 메뉴 열고 닫기 기능
+  let appStatus = false;
+ $(".fa-bars").click(function(e){
+    e.preventDefault();
+   if(appStatus==false){
      $("header").addClass("on");
-     status = true;
+     appStatus = true;
    }else{
      $("header").removeClass("on");
-     status = false;
+     appStatus = false;
    }
  });
- // 메인 필터
-  let status1 = false;
- $(".filter li").click(function(){
-   if(status1 == false){
-     $(".conTop ul").addClass("on");
-     status1 = true;
+ // 필터열고 닫기 기능
+  let fillterStatus = false;
+ $(".filter li").click(function(e){
+    e.preventDefault();
+   if(fillterStatus == false){
+     $(".filter").addClass("on");
+     fillterStatus = true;
    }else{
-     $(".conTop ul").removeClass("on");
-     status1 = false;
+     $(".filter").removeClass("on");
+     fillterStatus = false;
    }
  });
- // 서브 리스트 필터
- let status2 = false;
- $(".fillter ul").click(function(){
-   if(status2 == false){
-     $(".fillter ul ul").addClass("on");
-     status2 = true;
+ $("filter li").click(function(){
+  $(".filter").removeClass("on");
+ });
+
+//  상품리스트 필터 열고 닫기 기능
+ let subStatus = false;
+ $(".filter").click(function(e){
+    e.preventDefault();
+   if(subStatus == false){
+     $(".filter").addClass("on");
+     $(".filter").css("border-radius","10px 10px 0 0");
+     subStatus = true;
    }else{
-     $(".fillter ul ul").removeClass("on");
-     status2 = false;
+     $(".filter").removeClass("on");
+     $(".filter").css("border-radius","10px");
+     subStatus = false;
    }
  });
- $(".done").click(function(){
-   $(".fillter ul ul li p").removeClass("on");
-   if(status2 == true){
-     $(".fillter ul ul").removeClass("on");
-     status2 = false;
-   }
+ $("filter").click(function(){
+  $(".filter").removeClass("on");
+ });
+// 북마크 체크 기능
+ let bookmarkStatus = false;
+ $(".fa-bookmark").click(function(){
+    if(bookmarkStatus == false){
+      $(this).css("color","#7c7c67");
+      bookmarkStatus = true;
+    }else{
+      $(this).css("color","#c2cb80");
+      bookmarkStatus = false;
+    }
+ });
+ $(".filter ul li").click(function(){
+    $(".filter ul li").removeClass("on");
+    $(this).addClass("on");
  });
  $(".fillter ul ul li p").click(function(){
    $(this).addClass("on");
@@ -84,34 +104,5 @@ $(document).ready(function(){
      $(".checklist").removeClass("on");
      appstatus = false;
    }
- });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 });

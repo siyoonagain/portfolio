@@ -842,10 +842,6 @@ header > ul li a.on{
     position:relative;
     background: #f4f5f7;
 }
-/* #RD > p{
-    margin-bottom:5rem;
-    font-size:1rem;
-} */
 .rdInfo{
     display:flex;
     justify-content: center;
@@ -903,10 +899,6 @@ header > ul li a.on{
 }
 
 /* app */
-#app{
-    /* padding-top: 0; */
-    /* height: 100vh; */
-}
 .aboutApp{
     display:flex;
     justify-content: center;
