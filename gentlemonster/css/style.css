@@ -1,0 +1,221 @@
+/* reset */
+*{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:inherit;}
+ul,ol{list-style:none;}
+a{text-decoration:none;color:inherit;}
+img{max-width:inherit;}
+b,strong,dt{font-weight:normal;}
+i,address,em{font-weight:normal;font-style:normal;}
+table{border-collapse:collapse;}
+
+/*--------------animation---------------------------*/
+@keyframes asideOn{
+    from {
+        transform:translateX(100%);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes asideOff{
+    from {
+        transform:translateX(0);
+        opacity:1;
+    }
+    to{
+        transform:translateX(100%);
+        opacity:0;
+    }
+}
+/*---------------------------------------------------*/
+
+/* commend */
+html{
+    width: 100%;
+}
+body{
+    font-size:16px;
+    font-family: 'Inter', sans-serif;
+}
+main{
+    margin-top:43px;
+    position:relative;
+    overflow: hidden;
+}
+.wrap{
+    margin:0 auto;
+    background:#000;
+    color:#fff;
+}
+h2{
+    font-size:24px;
+    font-weight:bold;
+}
+section{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+strong{
+    font-weight:bold;
+}
+/* header */
+header{
+    position: sticky;
+    top: 0;
+    background: #000;
+    z-index: 100000;
+    padding: 20px 43px;
+}
+header h1{
+    width:341px;
+    margin-bottom:43px;
+    fill:#fff;
+    transition:all 1s ease 0;
+    cursor:pointer;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+header h1:hover{
+    fill:#dde45d;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.menu{
+    display:flex;
+    justify-content: space-between;
+}
+.menuL{
+    display:flex;
+}
+.menuL li{
+    margin-right: 43px;
+    transition:all 0.5s ease 0;
+}
+.menu li:hover{
+    color:#dde45d;
+    font-weight:bold;
+}
+.menuR{
+    display:flex;
+}
+.menuR li{
+    margin-left:43px;
+}
+header input{
+    padding: 3px 5px;
+    text-align: center;
+}
+
+section > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+div > img{
+    width: 50%;
+    object-fit: cover;
+    transition:all 0.2s ease 0;
+}
+div > img.on{
+    box-shadow: 10px 10px 5px #fff;
+}
+section img{
+    width: 50%;
+    object-fit: cover;
+    transition:all 0.8s ease 1s;
+}
+.txt{
+    width: 50%;
+    text-align: center;
+    padding:2%;
+    word-break: keep-all;
+}
+.txt > p{
+    margin:20px 0;
+    line-height: 180%;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn > p{
+    border:1px solid #fff;
+    padding:5px 10px;
+    margin:0 10px;
+    transition:all 0.5s ease 0s;
+}
+.btn > p:hover{
+    color:#000;
+    background:#fff;
+    box-shadow:0 0 10px #fff;
+}
+
+/* colleboVideo */
+.colleboVideo{
+    background: url("../img/videoImg.jpg") 0 0 no-repeat;
+}
+.colleboVideo > video{
+    margin:20px 0;
+}
+.colleboVideo p{
+    border:1px solid #fff;
+    padding:5px 10px;
+    transition:all 0.5s ease 0s;
+}
+.colleboVideo p:hover{
+    color:#000;
+    background:#fff;
+    box-shadow:0 0 10px #fff;
+}
+.colleboVideo > img.on{
+    box-shadow: 10px 10px 5px #fff;
+}
+/* footer */
+footer{
+    background:#fff;
+    color:#000;
+    padding: 43px;
+}
+.fService{
+    display: flex;
+    justify-content: center;
+    margin-bottom:43px;
+}
+.fService > li{
+    padding: 0 30px;
+    font-weight:bold;
+}
+.fService ul{
+    margin-top:20px;
+}
+.fService ul > li{
+    font-weight:normal;
+    margin:10px 0;
+    transition:all 0.5s ease 0;
+}
+.fService ul > li:hover{
+    color:#777;
+}
+.fService > li:last-of-type{
+    text-align: center;
+}
+.sns{
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sns > li{
+    width: 50%;
+    box-sizing: border-box;
+}
+.copy{
+    margin-bottom:20px;
+    font-weight:bold;
+}
